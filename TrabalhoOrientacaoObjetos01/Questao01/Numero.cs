@@ -99,86 +99,95 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
         public string ObterMilharExtenso()
         {
-            if (ObterMilharIsolado() == 1)
+            int milharIsolado = ObterMilharIsolado();
+            string milharExtenso = "";
+
+            if (milharIsolado == 1)
             {
-                return "mil";
+                milharExtenso = "mil";
             }
-            else if (ObterMilharIsolado() == 2)
+            else if (milharIsolado == 2)
             {
                 return "dois mil";
             }
-            else if (ObterMilharIsolado() == 3)
+            else if (milharIsolado == 3)
             {
                 return "três mil";
             }
-            else if (ObterMilharIsolado() == 4)
+            else if (milharIsolado == 4)
             {
                 return "quatro mil";
             }
-            else if (ObterMilharIsolado() == 5)
+            else if (milharIsolado == 5)
             {
                 return "cinco mil";
             }
-            else if (ObterMilharIsolado() == 6)
+            else if (milharIsolado == 6)
             {
                 return "seis mil";
             }
-            else if (ObterMilharIsolado() == 7)
+            else if (milharIsolado == 7)
             {
                 return "sete mil";
             }
-            else if (ObterMilharIsolado() == 8)
+            else if (milharIsolado == 8)
             {
                 return "oito mil";
             }
-            else if (ObterMilharIsolado() == 9)
+            else if (milharIsolado == 9)
             {
                 return "nove mil";
             }
 
             // Se zero:
-            return "";
+            return milharExtenso;
         }
 
         public string ObterCentenaExtenso()
         {
-            if (ObterCentenaIsolada() == 1 && ObterDezenaIsolada() == 0 && ObterUnidadeIsolada() == 0)
+            int centenaIsolada = ObterCentenaIsolada();
+            int dezenaIsolada = ObterDezenaIsolada();
+            int unidadeIsolada = ObterUnidadeIsolada();
+            string centenaExtenso = "";
+
+            if (centenaIsolada == 1 && dezenaIsolada == 0 && unidadeIsolada == 0)
             {
-                return "cem";
+                centenaExtenso= "cem";
             }
-            else if (ObterCentenaIsolada() == 1 && ObterDezenaIsolada() != 0 && ObterUnidadeIsolada() != 0)
+            else if (centenaIsolada == 1 && dezenaIsolada != 0 && unidadeIsolada != 0)
             {
-                return "cento";
+                centenaExtenso = "cento";
             }
-            else if (ObterCentenaIsolada() == 2)
+            else if (centenaIsolada == 2)
             {
-                return "duzentos";
+                centenaExtenso = "duzentos";
             }
-            else if (ObterCentenaIsolada() == 3)
+            else if (centenaIsolada == 3)
             {
-                return "trezentos";
+                centenaExtenso = "trezentos";
             }
-            else if (ObterCentenaIsolada() == 4)
+            // continuar alteração
+            else if (centenaIsolada == 4)
             {
                 return "quatrocentos";
             }
-            else if (ObterCentenaIsolada() == 5)
+            else if (centenaIsolada == 5)
             {
                 return "quinhentos";
             }
-            else if (ObterCentenaIsolada() == 6)
+            else if (centenaIsolada == 6)
             {
                 return "seiscentos";
             }
-            else if (ObterCentenaIsolada() == 7)
+            else if (centenaIsolada == 7)
             {
                 return "setecentos";
             }
-            else if (ObterCentenaIsolada() == 8)
+            else if (centenaIsolada == 8)
             {
                 return "oitocentos";
             }
-            else if (ObterCentenaIsolada() == 9)
+            else if (centenaIsolada == 9)
             {
                 return "novecentos";
             }
