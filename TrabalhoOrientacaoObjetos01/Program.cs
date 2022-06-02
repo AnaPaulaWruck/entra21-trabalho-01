@@ -1,5 +1,6 @@
 ﻿using TrabalhoOrientacaoObjetos01.Questao01;
 using TrabalhoOrientacaoObjetos01.Questao02;
+using TrabalhoOrientacaoObjetos01.Questao03;
 
 Console.WriteLine(@"-------MENU-------
 1 - Questão 1
