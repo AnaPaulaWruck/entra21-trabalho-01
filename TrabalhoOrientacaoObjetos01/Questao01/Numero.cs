@@ -20,40 +20,53 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             return true;
         }
 
-		/* double valor = 1645.32;
+		public int ObterMilhar()
+        {
+			int milhar = Convert.ToInt32((Valor - (Valor % 1000)) / 1000);
 
-		double milhar = (valor - (valor % 1000)) / 1000;
-		valor = Math.Round((valor % 1000), 2);
-		Console.WriteLine(milhar);
-		Console.WriteLine(valor);
-		
-		double centena = (valor - (valor % 100)) / 100;
-		valor = Math.Round((valor % 100), 2);
-		Console.WriteLine(centena);
-		Console.WriteLine(valor);
-		
-		double dezena = (valor - (valor % 10)) / 10;
-		valor = Math.Round((valor % 10), 2);
-		Console.WriteLine(dezena);
-		Console.WriteLine(valor);
-		
-		double unidade = (valor - (valor % 1)) / 1;
-		valor = Math.Round((valor % 1), 2);
-		Console.WriteLine(unidade);
-		Console.WriteLine(valor);
-		
-		double decimo = (valor - (valor % 0.1)) / 0.1;
-		valor = Math.Round((valor % 0.1), 2);
-		Console.WriteLine(decimo);
-		Console.WriteLine(valor);
-		
-		double centesimo = (valor - (valor % 0.01)) / 0.01;
-		valor = Math.Round((valor % 0.01), 2);
-		Console.WriteLine(centesimo);
-		Console.WriteLine(valor);
+			return milhar;
+		}
 
-		*/
-    }
+		public int ObterCentena()
+		{
+			Valor = Math.Round((Valor % 1000), 2);
+			int centena = Convert.ToInt32((Valor - (Valor % 100)) / 100);
+
+			return centena;
+		}
+
+		public int ObterDezena()
+		{
+			Valor = Math.Round((Valor % 100), 2);
+			int dezena = Convert.ToInt32((Valor - (Valor % 10)) / 10);
+
+			return dezena;
+		}
+
+		public int ObterUnidade()
+		{
+			Valor = Math.Round((Valor % 10), 2);
+			int unidade = Convert.ToInt32((Valor - (Valor % 1)) / 1);
+
+			return unidade;
+		}
+
+		public int ObterDecimo()
+		{
+			Valor = Math.Round((Valor % 1), 2);
+			int decimo = Convert.ToInt32((Valor - (Valor % 0.1)) / 0.1);
+
+			return decimo;
+		}
+
+		public int ObterCentesimo()
+		{
+			Valor = Math.Round((Valor % 0.1), 2);
+			int centesimo = Convert.ToInt32((Valor - (Valor % 0.01)) / 0.01);
+
+			return centesimo;
+		}
+	}
 }
 
 
