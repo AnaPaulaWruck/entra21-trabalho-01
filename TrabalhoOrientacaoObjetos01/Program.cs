@@ -1,4 +1,6 @@
-﻿Console.WriteLine(@"-------MENU-------
+﻿using TrabalhoOrientacaoObjetos01.Questao02;
+
+Console.WriteLine(@"-------MENU-------
 1 - Questão 1
 2 - Questão 2
 3 - Questão 3
@@ -16,7 +18,7 @@ while (opcaoDesejada != 9)
     }
     else if (opcaoDesejada == 2)
     {
-        ExemploCalendario questao02 = new ExemploCalendario();
+        ExecutarCalendario questao02 = new ExecutarCalendario();
         questao02.Executar();
     }
     else if (opcaoDesejada == 3)
