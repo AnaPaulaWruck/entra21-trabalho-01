@@ -58,8 +58,14 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                 Unidade = "Oito";
 
             else if (Unidade == "9")
+            {
                 Unidade = "Nove";
-            
+            }
+            else if ((Unidade > "9") && (Unidade < "20"))
+            {
+                var horaExtenso = Convert.ToDateTime(Hora);
+
+            }
             return Unidade;
         }
         public string ObterMinutoPorExtensoEmDezena()
@@ -115,7 +121,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
 
             return Unidade;
         }
-        public string ObterSegundoPorExtensoEmDezena()
+        public string ObterSegundosPorExtensoEmDezena()
         {
             if (Dezena == "1")
                 Dezena = "Dez";
@@ -136,6 +142,37 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
                 Dezena = "";
 
             return Dezena;
+        }
+        public string ObterSegundosPorExtensoEmUnidade()
+        {
+            if (Unidade == "1")
+                Unidade = "Um";
+
+            else if (Unidade == "2")
+                Unidade = "Dois";
+
+            else if (Unidade == "3")
+                Unidade = "Três";
+
+            else if (Unidade == "4")
+                Unidade = "Quatro";
+
+            else if (Unidade == "5")
+                Unidade = "Cinco";
+
+            else if (Unidade == "6")
+                Unidade = "Seis";
+
+            else if (Unidade == "7")
+                Unidade = "Sete";
+
+            else if (Unidade == "8")
+                Unidade = "Oito";
+
+            else if (Unidade == "9")
+                Unidade = "Nove";
+
+            return Unidade;
         }
     }
 }
