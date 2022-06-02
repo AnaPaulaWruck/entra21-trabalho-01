@@ -51,7 +51,14 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             else if (Unidade == "6")
                 Unidade = "Seis";
 
+            else if (Unidade == "7")
+                Unidade = "Sete";
 
+            else if (Unidade == "8")
+                Unidade = "Oito";
+
+            else if (Unidade == "9")
+                Unidade = "Nove";
             
             return Unidade;
         }
@@ -60,9 +67,32 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             if (Dezena == "1")
                 Dezena = "Dez";
 
+            else if (Dezena == "2")
+                Dezena = "Vinte";
+
+            else if (Dezena == "3")
+                Dezena = "Trinta";
+
+            else if (Dezena == "4")
+                Dezena = "Quarenta";
+
+            else if (Dezena == "5")
+                Dezena = "Cinquenta";
+
+            else if (Dezena == "6")
+                Dezena = "";
+
             return Dezena;
         }
 
+        public string ObterMinutoPorExtensoEmUnidade()
+        {
+            if (Unidade == "1")
+                Unidade = "Um";
 
+
+
+            return Unidade;
+        }
     }
 }
