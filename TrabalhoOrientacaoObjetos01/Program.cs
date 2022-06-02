@@ -11,36 +11,24 @@ Console.WriteLine(@"-------MENU-------
 Console.Write("\nDigite a opção desejada: ");
 int opcaoDesejada = Convert.ToInt32(Console.ReadLine());
 
-while (opcaoDesejada != 9)
+
+if (opcaoDesejada == 1)
 {
-    //if (opcaoDesejada == 1)
-    //{
-    //    ExemploNumero questao01 = new ExemploNumero();
-    //    questao01.Executar();
-    //}
-    //else if (opcaoDesejada == 2)
-    //{
-    //    ExemploCalendario questao02 = new ExemploCalendario();
-    //    questao02.Executar();
-    //}
-    //else if (opcaoDesejada == 3)
-    //{
-    //    ExemploRelogio questao03 = new ExemploRelogio();
-    //    questao03.Executar();
-    if (opcaoDesejada == 1)
-    {
-        ExecutarNumero questao01 = new ExecutarNumero();
-        questao01.Executar();
-    }
-    else if (opcaoDesejada == 2)
-    {
-        ExecutarCalendario questao02 = new ExecutarCalendario();
-        questao02.Executar();
-    }
-    else if (opcaoDesejada == 3)
-    {
-        ExemploRelogio questao03 = new ExemploRelogio();
-        questao03.Executar();
-    }
+    ExecutarNumero questao01 = new ExecutarNumero();
+    questao01.Executar();
+}
+else if (opcaoDesejada == 2)
+{
+    ExecutarCalendario questao02 = new ExecutarCalendario();
+    questao02.Executar();
+}
+else if (opcaoDesejada == 3)
+{
+    ExecutarRelogio questao03 = new ExecutarRelogio();
+    questao03.Executar();
+}
+else if (opcaoDesejada == 9)
+{
+    Console.WriteLine("Fim do programa");
 }
 
