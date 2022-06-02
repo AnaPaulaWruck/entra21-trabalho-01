@@ -84,15 +84,58 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
 
             return Dezena;
         }
-
         public string ObterMinutoPorExtensoEmUnidade()
         {
             if (Unidade == "1")
                 Unidade = "Um";
 
+            else if (Unidade == "2")
+                Unidade = "Dois";
 
+            else if (Unidade == "3")
+                Unidade = "Três";
+
+            else if (Unidade == "4")
+                Unidade = "Quatro";
+
+            else if (Unidade == "5")
+                Unidade = "Cinco";
+
+            else if (Unidade == "6")
+                Unidade = "Seis";
+
+            else if (Unidade == "7")
+                Unidade = "Sete";
+
+            else if (Unidade == "8")
+                Unidade = "Oito";
+
+            else if (Unidade == "9")
+                Unidade = "Nove";
 
             return Unidade;
+        }
+        public string ObterSegundoPorExtensoEmDezena()
+        {
+            if (Dezena == "1")
+                Dezena = "Dez";
+
+            else if (Dezena == "2")
+                Dezena = "Vinte";
+
+            else if (Dezena == "3")
+                Dezena = "Trinta";
+
+            else if (Dezena == "4")
+                Dezena = "Quarenta";
+
+            else if (Dezena == "5")
+                Dezena = "Cinquenta";
+
+            else if (Dezena == "6")
+                Dezena = "";
+
+            return Dezena;
         }
     }
 }
