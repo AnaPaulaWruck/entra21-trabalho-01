@@ -76,66 +76,66 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
 
             if (dia == 1)
             {
-                return "Primeiro de ";
+                return "Primeiro ";
             }
             else if (dia == 2)
             {
-                return "Dois de ";
+                return "Dois ";
             }
             else if (dia == 3)
             {
-                return "Três de ";
+                return "Três ";
             }
             else if (dia == 4)
             {
-                return "Quatro de";
+                return "Quatro ";
             }
             else if (dia == 5)
             {
-                return "Cinco de";
+                return "Cinco ";
             }
             else if (dia == 6)
             {
-                return "Seis de";
+                return "Seis ";
             }
             else if (dia == 7)
             {
-                return "Sete de";
+                return "Sete ";
             }
             else if (dia == 8)
             {
-                return "Oito de";
+                return "Oito ";
             }
             else if (dia == 9)
             {
-                return "Nove de ";
+                return "Nove ";
             }
             else if (dia > 9 && dia < 20)
             {
                 var diaString = Convert.ToString(dia);
                 if (Convert.ToString(diaString[1]) == "1")
                 {
-                    return "Onze de ";
+                    return "Onze ";
                 }
                 else if (Convert.ToString(diaString[1]) == "2")
                 {
-                    return "Doze de ";
+                    return "Doze ";
                 }
                 else if (Convert.ToString(diaString[1]) == "3")
                 {
-                    return "Treze de ";
+                    return "Treze ";
                 }
                 else if (Convert.ToString(diaString[1]) == "4")
                 {
-                    return "Quatorze de ";
+                    return "Quatorze ";
                 }
                 else if (Convert.ToString(diaString[1]) == "5")
                 {
-                    return "Quinze de ";
+                    return "Quinze ";
                 }
                 else if (Convert.ToString(diaString[1]) == "6")
                 {
-                    return "Dezesseis de ";
+                    return "Dezesseis ";
                 }
                 else if (Convert.ToString(diaString[1]) == "7")
                 {
