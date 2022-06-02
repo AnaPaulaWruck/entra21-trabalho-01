@@ -17,4 +17,3 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
         }
     }
 }
-//Remover "de" dos dias do metodo ObterDiaPorExtenso.
