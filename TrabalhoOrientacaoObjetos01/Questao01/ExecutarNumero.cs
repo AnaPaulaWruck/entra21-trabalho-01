@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Questao01
 {
-    public class ExemploNumero
+    public class ExecutarNumero
     {
         public void Executar()
         {

@@ -29,7 +29,7 @@ while (opcaoDesejada != 9)
     //    questao03.Executar();
     if (opcaoDesejada == 1)
     {
-        ExemploNumero questao01 = new ExemploNumero();
+        ExecutarNumero questao01 = new ExecutarNumero();
         questao01.Executar();
     }
     else if (opcaoDesejada == 2)
