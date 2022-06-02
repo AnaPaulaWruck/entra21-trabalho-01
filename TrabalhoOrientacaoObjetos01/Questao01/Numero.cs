@@ -99,11 +99,11 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
         public string ObterMilharExtenso()
         {
-            if(ObterMilharIsolado() == 1)
+            if (ObterMilharIsolado() == 1)
             {
                 return "mil";
             }
-            else if(ObterMilharIsolado() == 2)
+            else if (ObterMilharIsolado() == 2)
             {
                 return "dois mil";
             }
@@ -136,6 +136,65 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
                 return "nove mil";
             }
 
+            // Se zero:
+            return "";
+        }
+
+        public string ObterCentenaExtenso()
+        {
+            if (ObterCentenaIsolada() == 1 && ObterDezenaIsolada() == 0 && ObterUnidadeIsolada() == 0)
+            {
+                return "cem";
+            }
+            else if (ObterCentenaIsolada() == 1 && ObterDezenaIsolada() != 0 && ObterUnidadeIsolada() != 0)
+            {
+                return "cento";
+            }
+            else if (ObterCentenaIsolada() == 2)
+            {
+                return "duzentos";
+            }
+            else if (ObterCentenaIsolada() == 3)
+            {
+                return "trezentos";
+            }
+            else if (ObterCentenaIsolada() == 4)
+            {
+                return "quatrocentos";
+            }
+            else if (ObterCentenaIsolada() == 5)
+            {
+                return "quinhentos";
+            }
+            else if (ObterCentenaIsolada() == 6)
+            {
+                return "seiscentos";
+            }
+            else if (ObterCentenaIsolada() == 7)
+            {
+                return "setecentos";
+            }
+            else if (ObterCentenaIsolada() == 8)
+            {
+                return "oitocentos";
+            }
+            else if (ObterCentenaIsolada() == 9)
+            {
+                return "novecentos";
+            }
+
+            // Se zero:
+            return "";
+        }
+
+        public string ObterDezenaExtenso()
+        {
+            if (ObterDezenaIsolada() == 1 && ObterUnidadeIsolada() == 0)
+            {
+                return "dez";
+            }
+
+            // Se zero:
             return "";
         }
     }
