@@ -11,10 +11,10 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
         public void Executar()
         {
             var relogio = new Relogio();
-            relogio.Hora = 13;
-            relogio.Minuto = 32;
-            relogio.Segundo = 59;
-            relogio.HoraCompleta = "21:32:59";
+            //relogio.Hora = 13;
+            //relogio.Minuto = 32;
+            //relogio.Segundo = 59;
+            //relogio.HoraCompleta = "21:32:59";
 
 
 
