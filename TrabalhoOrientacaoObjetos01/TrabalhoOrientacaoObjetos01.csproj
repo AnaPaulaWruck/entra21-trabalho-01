@@ -9,6 +9,7 @@
 
   <ItemGroup>
     <Folder Include="Questao03\" />
+    <Folder Include="Questao01\" />
     <Folder Include="Questao02\" />
   </ItemGroup>
 
