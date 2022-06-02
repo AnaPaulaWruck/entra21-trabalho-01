@@ -8,13 +8,13 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
 {
     public class Relogio
     {
-        public DateTime Hora, Minuto, Segundo, HoraCompleta;
-        public DateTime ObterHoraPorExtenso()
-        {
-            DateTime hora = Hora;
+        public string Hora, Minuto, Segundo, HoraCompleta, Milhar, Centena, Dezena;
+        //public string ObterHoraPorExtenso()
+        //{
+        //    string hora = ;
 
-            return hora;
-        }
+        //    return hora;
+        //}
 
 
     }

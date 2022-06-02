@@ -11,13 +11,12 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
         public void Executar()
         {
             var relogio = new Relogio();
-            //relogio.Hora = 13;
-            //relogio.Minuto = 32;
-            //relogio.Segundo = 59;
-            //relogio.HoraCompleta = "21:32:59";
-
-
-
+            Console.WriteLine("Informe a hora atual: ");
+            relogio.Hora = Console.ReadLine();
+            relogio.Minuto = Console.ReadLine();
+            relogio.Segundo = Console.ReadLine();
+            //relogio.Dezena = Hora.Substring(2, 1);
+            //relogio.Unidade = Hora.Substring(3, 1);
 
         }
     }
