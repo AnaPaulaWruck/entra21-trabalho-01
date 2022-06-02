@@ -10,7 +10,11 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
     {
         public void Executar()
         {
+            var calendario = new Calendario();
+            calendario.Data = DateTime.Parse("1997/01/06");
 
+            Console.WriteLine(calendario.ObterDataCompletaPorExtenso());
         }
     }
 }
+//Remover "de" dos dias do metodo ObterDiaPorExtenso.
