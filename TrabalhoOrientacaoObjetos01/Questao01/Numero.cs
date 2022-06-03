@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Questao01
 {
+    // Ana Paula Wruck
     public class Numero
     {
         public double Valor;
@@ -328,6 +329,118 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             return "";
         }
+
+        /*
+        public string ObterDecimoExtenso()
+        {
+            int decimoIsolado = ObterDecimoIsolado();
+            int centesimoIsolado = ObterCentesimoIsolado();
+
+            if (decimoIsolado == 0)
+            {
+                if (centesimoIsolado == 0)
+                {
+                    return "zero";
+                }
+                else if (centesimoIsolado == 1)
+                {
+                    return "um";
+                }
+                else if (centesimoIsolado == 2)
+                {
+                    return "dois";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "três";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "quatro";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "cinco";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "seis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "sete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "oito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "nove";
+                }
+            }
+            
+            else if (decimoIsolado == 1)
+            {
+                if (centesimoIsolado == 0)
+                {
+
+                }
+            }
+            
+            else if (decimoIsolado == 1 && centesimoIsolado != 0)
+            {
+                if (centesimoIsolado == 1)
+                {
+                    return "onze";
+                }
+
+            }
+
+            else if (decimoIsolado == 2)
+            {
+                return "dois";
+            }
+            else if (decimoIsolado == 3)
+            {
+                return "três";
+            }
+            else if (decimoIsolado == 4)
+            {
+                return "quatro";
+            }
+            else if (decimoIsolado == 5)
+            {
+                return "cinco";
+            }
+            else if (decimoIsolado == 6)
+            {
+                return "seis";
+            }
+            else if (decimoIsolado == 7)
+            {
+                return "sete";
+            }
+            else if (decimoIsolado == 8)
+            {
+                return "oito";
+            }
+            else if (decimoIsolado == 9)
+            {
+                return "nove";
+            }
+            else if (decimoIsolado == 0 && centesimoIsolado == 0)
+            {
+                return "zero";
+            }
+            else if (decimoIsolado == 0 && centesimoIsolado != 0)
+            {
+                return "";
+            }
+
+            return "teste";
+        }
+        */
     }
 }
 
@@ -354,3 +467,4 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
 // 0,1 - um décimo
 // 0,01 - um centésimo
+// 0,11 - onze centésimos
