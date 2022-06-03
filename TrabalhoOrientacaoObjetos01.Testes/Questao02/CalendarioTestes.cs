@@ -39,5 +39,53 @@ namespace TrabalhoOrientacaoObjetos01.Testes.Questao02
             mesTesteExtenso.Should().Be(nomeEsperado);
             
         }
+
+        [Theory]
+        [InlineData(1, "Primeiro")]
+        [InlineData(2, "Dois")]
+        [InlineData(3, "Três")]
+        [InlineData(4, "Quatro")]
+        [InlineData(5, "Cinco")]
+        [InlineData(6, "Seis")]
+        [InlineData(7, "Sete")]
+        [InlineData(8, "Oito")]
+        [InlineData(9, "Nove")]
+        [InlineData(10, "Dez")]
+        [InlineData(11, "Onze")]
+        [InlineData(12, "Doze")]
+        [InlineData(13, "Treze")]
+        [InlineData(14, "Quatorze")]
+        [InlineData(15, "Quinze")]
+        [InlineData(16, "Dezesseis")]
+        [InlineData(17, "Dezessete")]
+        [InlineData(18, "Dezoito")]
+        [InlineData(19, "Dezenove")]
+        [InlineData(20, "Vinte")]
+        [InlineData(21, "Vinte e um")]
+        [InlineData(22, "Vinte e dois")]
+        [InlineData(23, "Vinte e três")]
+        [InlineData(24, "Vinte e quatro")]
+        [InlineData(25, "Vinte e cinco")]
+        [InlineData(26, "Vinte e seis")]
+        [InlineData(27, "Vinte e sete")]
+        [InlineData(28, "Vinte e oito")]
+        [InlineData(29, "Vinte e nove")]
+        [InlineData(30, "Trinta")]
+        [InlineData(31, "Trinta e um")]
+
+        public void Validar_ObterDiaPorExtenso(int diaTeste, string nomeEsperado)
+        {
+            //Arrange
+            var calendario = new Calendario();
+            calendario.Data = new DateTime(2022, 5, diaTeste);
+
+            //Act
+            var diaTesteExtenso = calendario.ObterDiaPorExtenso();
+
+            //Assert
+            diaTesteExtenso.Should().Be(nomeEsperado);
+        }
+
+
     }
 }

@@ -8,6 +8,8 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
 {
     public class Calendario
     {
+        //AMANDA CAROLINE BAULER MOTA
+
         public DateTime Data;
         //Transformar a data e string.
         public string ObterMesPorExtenso()
@@ -76,85 +78,88 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
 
             if (dia == 1)
             {
-                return "Primeiro ";
+                return "Primeiro";
             }
             else if (dia == 2)
             {
-                return "Dois ";
+                return "Dois";
             }
             else if (dia == 3)
             {
-                return "Três ";
+                return "Três";
             }
             else if (dia == 4)
             {
-                return "Quatro ";
+                return "Quatro";
             }
             else if (dia == 5)
             {
-                return "Cinco ";
+                return "Cinco";
             }
             else if (dia == 6)
             {
-                return "Seis ";
+                return "Seis";
             }
             else if (dia == 7)
             {
-                return "Sete ";
+                return "Sete";
             }
             else if (dia == 8)
             {
-                return "Oito ";
+                return "Oito";
             }
             else if (dia == 9)
             {
-                return "Nove ";
+                return "Nove";
             }
             else if (dia > 9 && dia < 20)
             {
                 var diaString = Convert.ToString(dia);
-                if (Convert.ToString(diaString[1]) == "1")
+                if (Convert.ToString(diaString[1]) == "0")
                 {
-                    return "Onze ";
+                    return "Dez";
+                }
+                else if(Convert.ToString(diaString[1]) == "1")
+                {
+                    return "Onze";
                 }
                 else if (Convert.ToString(diaString[1]) == "2")
                 {
-                    return "Doze ";
+                    return "Doze";
                 }
                 else if (Convert.ToString(diaString[1]) == "3")
                 {
-                    return "Treze ";
+                    return "Treze";
                 }
                 else if (Convert.ToString(diaString[1]) == "4")
                 {
-                    return "Quatorze ";
+                    return "Quatorze";
                 }
                 else if (Convert.ToString(diaString[1]) == "5")
                 {
-                    return "Quinze ";
+                    return "Quinze";
                 }
                 else if (Convert.ToString(diaString[1]) == "6")
                 {
-                    return "Dezesseis ";
+                    return "Dezesseis";
                 }
                 else if (Convert.ToString(diaString[1]) == "7")
                 {
-                    return "Dezessete ";
+                    return "Dezessete";
                 }
                 else if (Convert.ToString(diaString[1]) == "8")
                 {
-                    return "Dezoito ";
+                    return "Dezoito";
                 }
                 else if (Convert.ToString(diaString[1]) == "9")
                 {
-                    return "Dezenove ";
+                    return "Dezenove";
                 }
             }
             else if (dia < 30)
             {
                 var diaString = Convert.ToString(dia);
-                if (Convert.ToString(diaString[1]) == "1")
-                {
+                
                     if (Convert.ToString(diaString[1]) == "0")
                     {
                         return "Vinte";
@@ -195,7 +200,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                     {
                         return "Vinte e nove";
                     }
-                }
+                
             }
             else if (dia < 31)
             {
@@ -206,11 +211,11 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                 }
                 else
                 {
-                    return "Trinta e dois";
+                    return "Trinta e um";
                 }
             }
 
-            return "Ivalido";
+            return "";
         }
         public string ObterAnoPorExtenso()
         {
