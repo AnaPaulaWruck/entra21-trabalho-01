@@ -27,7 +27,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             //Console.WriteLine("Centena extenso: " + numero.ObterCentenaExtenso());
             //Console.WriteLine("Dezena extenso: " + numero.ObterDezenaExtenso());
             //Console.WriteLine("Unidade extenso: " + numero.ObterUnidadeExtenso());
-            Console.WriteLine("Décimo extenso: " + numero.ObterDecimoExtenso());
+            //Console.WriteLine("Décimo extenso: " + numero.ObterDecimoExtenso());
             //Console.WriteLine("Centésimo extenso: " + numero.ObterCentesimoExtenso());
 
             //Console.WriteLine("Valor total: " + numero.ObterValorTotalExtenso());

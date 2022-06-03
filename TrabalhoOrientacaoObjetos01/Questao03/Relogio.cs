@@ -186,9 +186,10 @@ namespace TrabalhoOrientacaoObjetos01.Questao03
             }
             return "";
         }
-        //public string ObterHoraCompleta()
-        //{
-        //    Console.WriteLine(return ObterHoraPorExtensoEmDezena());
-        //}
+        public string ObterHoraCompleta()
+        {
+            Console.WriteLine("Horas por Extenso: ");
+            return ObterHoraPorExtensoEmDezena() + ObterHoraPorExtensoEmUnidade() + ObterMinutoPorExtensoEmDezena() + ObterMinutoPorExtensoEmUnidade() + ObterSegundosPorExtensoEmDezena() +ObterSegundosPorExtensoEmUnidade();
+        }
     }
 }
