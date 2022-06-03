@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Questao01
 {
+    // Ana Paula Wruck
     public class ExecutarNumero
     {
         public void Executar()
@@ -25,8 +26,8 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             //Console.WriteLine("Milhar extenso: " + numero.ObterMilharExtenso());
             //Console.WriteLine("Centena extenso: " + numero.ObterCentenaExtenso());
             //Console.WriteLine("Dezena extenso: " + numero.ObterDezenaExtenso());
-            Console.WriteLine("Unidade extenso: " + numero.ObterUnidadeExtenso());
-            //Console.WriteLine("Décimo extenso: " + numero.ObterDecimoExtenso());
+            //Console.WriteLine("Unidade extenso: " + numero.ObterUnidadeExtenso());
+            Console.WriteLine("Décimo extenso: " + numero.ObterDecimoExtenso());
             //Console.WriteLine("Centésimo extenso: " + numero.ObterCentesimoExtenso());
 
             //Console.WriteLine("Valor total: " + numero.ObterValorTotalExtenso());
