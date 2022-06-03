@@ -330,117 +330,138 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             return "";
         }
 
-        /*
         public string ObterDecimoExtenso()
         {
             int decimoIsolado = ObterDecimoIsolado();
             int centesimoIsolado = ObterCentesimoIsolado();
 
-            if (decimoIsolado == 0)
+            if (decimoIsolado == 1 && centesimoIsolado == 0)
             {
-                if (centesimoIsolado == 0)
-                {
-                    return "zero";
-                }
-                else if (centesimoIsolado == 1)
-                {
-                    return "um";
-                }
-                else if (centesimoIsolado == 2)
-                {
-                    return "dois";
-                }
-                else if (centesimoIsolado == 3)
-                {
-                    return "três";
-                }
-                else if (centesimoIsolado == 4)
-                {
-                    return "quatro";
-                }
-                else if (centesimoIsolado == 5)
-                {
-                    return "cinco";
-                }
-                else if (centesimoIsolado == 6)
-                {
-                    return "seis";
-                }
-                else if (centesimoIsolado == 7)
-                {
-                    return "sete";
-                }
-                else if (centesimoIsolado == 8)
-                {
-                    return "oito";
-                }
-                else if (centesimoIsolado == 9)
-                {
-                    return "nove";
-                }
+                return "dez";
             }
-            
-            else if (decimoIsolado == 1)
-            {
-                if (centesimoIsolado == 0)
-                {
-
-                }
-            }
-            
             else if (decimoIsolado == 1 && centesimoIsolado != 0)
             {
                 if (centesimoIsolado == 1)
                 {
                     return "onze";
                 }
-
+                else if (centesimoIsolado == 2)
+                {
+                    return "doze";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "treze";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "catorze";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "quinze";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "dezesseis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "dezessete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "dezoito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "dezenove";
+                }
             }
-
             else if (decimoIsolado == 2)
             {
-                return "dois";
+                return "vinte";
             }
             else if (decimoIsolado == 3)
             {
-                return "três";
+                return "trinta";
             }
             else if (decimoIsolado == 4)
             {
-                return "quatro";
+                return "quarenta";
             }
             else if (decimoIsolado == 5)
             {
-                return "cinco";
+                return "cinquenta";
             }
             else if (decimoIsolado == 6)
             {
-                return "seis";
+                return "sessenta";
             }
             else if (decimoIsolado == 7)
             {
-                return "sete";
+                return "setenta";
             }
             else if (decimoIsolado == 8)
             {
-                return "oito";
+                return "oitenta";
             }
             else if (decimoIsolado == 9)
             {
-                return "nove";
+                return "noventa";
+            }
+
+            return "";
+        }
+
+        public string ObterCentesimoExtenso()
+        {
+            int decimoIsolado = ObterDecimoIsolado();
+            int centesimoIsolado = ObterCentesimoIsolado();
+
+            if (centesimoIsolado == 1)
+            {
+                return "um";
+            }
+            else if (centesimoIsolado == 2)
+            {
+                return "dois";
+            }
+            else if (centesimoIsolado == 3)
+            {
+                return "dois";
+            }
+            else if (centesimoIsolado == 4)
+            {
+                return "dois";
+            }
+            else if (centesimoIsolado == 5)
+            {
+                return "dois";
+            }
+            else if (centesimoIsolado == 6)
+            {
+                return "dois";
+            }
+            else if (centesimoIsolado == 7)
+            {
+                return "dois";
+            }
+            else if (centesimoIsolado == 8)
+            {
+                return "dois";
+            }
+            else if (centesimoIsolado == 9)
+            {
+                return "dois";
             }
             else if (decimoIsolado == 0 && centesimoIsolado == 0)
             {
                 return "zero";
             }
-            else if (decimoIsolado == 0 && centesimoIsolado != 0)
-            {
-                return "";
-            }
 
-            return "teste";
+            return "";
         }
-        */
     }
 }
 
