@@ -8,6 +8,8 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
 {
     public class Calendario
     {
+        //AMANDA CAROLINE BAULER MOTA
+
         public DateTime Data;
         //Transformar a data e string.
         public string ObterMesPorExtenso()
@@ -113,7 +115,11 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (dia > 9 && dia < 20)
             {
                 var diaString = Convert.ToString(dia);
-                if (Convert.ToString(diaString[1]) == "1")
+                if (Convert.ToString(diaString[1]) == "0")
+                {
+                    return "Dez";
+                }
+                else if(Convert.ToString(diaString[1]) == "1")
                 {
                     return "Onze";
                 }
@@ -153,8 +159,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (dia < 30)
             {
                 var diaString = Convert.ToString(dia);
-                if (Convert.ToString(diaString[1]) == "1")
-                {
+                
                     if (Convert.ToString(diaString[1]) == "0")
                     {
                         return "Vinte";
@@ -195,7 +200,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                     {
                         return "Vinte e nove";
                     }
-                }
+                
             }
             else if (dia < 31)
             {
@@ -206,7 +211,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                 }
                 else
                 {
-                    return "Trinta e dois";
+                    return "Trinta e um";
                 }
             }
 
