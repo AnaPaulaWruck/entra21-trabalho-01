@@ -10,11 +10,41 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
     {
         public void Executar()
         {
+            Console.WriteLine(@"-------MENU-------
+            1 - OBTER MÊS POR EXTENSO
+            2 - OBTER DIA POR EXTENSO 
+            3 - OBTER ANO POR EXTENSO");
+
+            Console.WriteLine("Escolha a opção desejada: ");
             var calendario = new Calendario();
-            calendario.Data = DateTime.Parse("1997/01/06");
+            int opcaoDesejada = Convert.ToInt32(Console.ReadLine());
+            if(opcaoDesejada == 1)
+            {
+                Console.WriteLine("Digite uma data: ");
+                DateTime dataEscolhida = Convert.ToDateTime(Console.ReadLine());
 
-            Console.WriteLine(calendario.ObterDataCompletaPorExtenso());
+                calendario.Data = dataEscolhida;
 
+                Console.WriteLine("O mês é: " + calendario.ObterMesPorExtenso());
+            }
+            else if (opcaoDesejada == 2)
+            {
+                Console.WriteLine("Digite uma data: ");
+                DateTime dataEscolhida = Convert.ToDateTime(Console.ReadLine());
+
+                calendario.Data = dataEscolhida;
+
+                Console.WriteLine("O mês é: " + calendario.ObterDiaPorExtenso());
+            }
+            else if (opcaoDesejada == 3)
+            {
+                Console.WriteLine("Digite uma data: ");
+                DateTime dataEscolhida = Convert.ToDateTime(Console.ReadLine());
+
+                calendario.Data = dataEscolhida;
+
+                Console.WriteLine("O mês é: " + calendario.ObterAnoPorExtenso());
+            }
         }
     }
 }
