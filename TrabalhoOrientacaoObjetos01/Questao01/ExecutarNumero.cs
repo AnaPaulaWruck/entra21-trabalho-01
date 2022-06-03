@@ -12,7 +12,22 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         public void Executar()
         {
             var numero = new Numero();
-            numero.Valor = 0000.52;
+            numero.Valor = 0000.12;
+
+            Console.WriteLine(@"-------MENU-------
+1 - Questão 1
+2 - Questão 2
+3 - Questão 3
+9 - Sair");
+
+            Console.Write("\nDigite a opção desejada: ");
+            int opcaoDesejada = Convert.ToInt32(Console.ReadLine());
+
+            if (opcaoDesejada == 1)
+            {
+                ExecutarNumero questao01 = new ExecutarNumero();
+                questao01.Executar();
+            }
 
             Console.WriteLine("Valor válido: " + numero.VerificarSeValorValido());
 
@@ -27,8 +42,8 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             //Console.WriteLine("Centena extenso: " + numero.ObterCentenaExtenso());
             //Console.WriteLine("Dezena extenso: " + numero.ObterDezenaExtenso());
             //Console.WriteLine("Unidade extenso: " + numero.ObterUnidadeExtenso());
-            Console.WriteLine("Décimo extenso: " + numero.ObterDecimoExtenso());
-            //Console.WriteLine("Centésimo extenso: " + numero.ObterCentesimoExtenso());
+            //Console.WriteLine("Décimo extenso: " + numero.ObterDecimoExtenso());
+            Console.WriteLine("Centésimo extenso: " + numero.ObterCentesimoExtenso());
 
             //Console.WriteLine("Valor total: " + numero.ObterValorTotalExtenso());
         }
