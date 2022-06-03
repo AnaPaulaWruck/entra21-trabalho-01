@@ -8,6 +8,7 @@ using Xunit;
 
 namespace TrabalhoOrientacaoObjetos01.Testes.Questao03
 {
+    // Guilherme Dzesigaleski Mueller
     public class RelogioTests
     {
             [Theory]

@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace TrabalhoOrientacaoObjetos01.Questao03
 {
+    // Guilherme Dzesigaleski Mueller
     public class Relogio
     {
         public string Hora, Minuto, Segundo, HoraCompleta;
