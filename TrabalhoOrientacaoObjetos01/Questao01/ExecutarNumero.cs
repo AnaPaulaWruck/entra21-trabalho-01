@@ -11,7 +11,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         public void Executar()
         {
             var numero = new Numero();
-            numero.Valor = 2121.52;
+            numero.Valor = 0000.52;
 
             Console.WriteLine("Valor válido: " + numero.VerificarSeValorValido());
 
@@ -24,8 +24,8 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             //Console.WriteLine("Milhar extenso: " + numero.ObterMilharExtenso());
             //Console.WriteLine("Centena extenso: " + numero.ObterCentenaExtenso());
-            Console.WriteLine("Dezena extenso: " + numero.ObterDezenaExtenso());
-            //Console.WriteLine("Unidade extenso: " + numero.ObterUnidadeExtenso());
+            //Console.WriteLine("Dezena extenso: " + numero.ObterDezenaExtenso());
+            Console.WriteLine("Unidade extenso: " + numero.ObterUnidadeExtenso());
             //Console.WriteLine("Décimo extenso: " + numero.ObterDecimoExtenso());
             //Console.WriteLine("Centésimo extenso: " + numero.ObterCentesimoExtenso());
 
@@ -33,10 +33,3 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         }
     }
 }
-
-            
-            //DateTime hora = DateTime.Parse("HH:mm:ss");
-
-
-
-            //hora.ToString("HH:mm:ss");

@@ -277,6 +277,57 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             // Se zero:
             return "";
         }
+
+        public string ObterUnidadeExtenso()
+        {
+            int milharIsolado = ObterMilharIsolado();
+            int centenaIsolada = ObterCentenaIsolada();
+            int dezenaIsolada = ObterDezenaIsolada();
+            int unidadeIsolada = ObterUnidadeIsolada();
+
+            if (unidadeIsolada == 1)
+            {
+                return "um";
+            }
+            else if (unidadeIsolada == 2)
+            {
+                return "dois";
+            }
+            else if (unidadeIsolada == 3)
+            {
+                return "três";
+            }
+            else if (unidadeIsolada == 4)
+            {
+                return "quatro";
+            }
+            else if (unidadeIsolada == 5)
+            {
+                return "cinco";
+            }
+            else if (unidadeIsolada == 6)
+            {
+                return "seis";
+            }
+            else if (unidadeIsolada == 7)
+            {
+                return "sete";
+            }
+            else if (unidadeIsolada == 8)
+            {
+                return "oito";
+            }
+            else if (unidadeIsolada == 9)
+            {
+                return "nove";
+            }
+            else if (unidadeIsolada == 0 && dezenaIsolada == 0 && centenaIsolada == 0 && milharIsolado == 0)
+            {
+                return "zero";
+            }
+
+            return "";
+        }
     }
 }
 
