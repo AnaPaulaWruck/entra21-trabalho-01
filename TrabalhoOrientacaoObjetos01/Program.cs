@@ -11,7 +11,6 @@ Console.WriteLine(@"-------MENU-------
 Console.Write("\nDigite a opção desejada: ");
 int opcaoDesejada = Convert.ToInt32(Console.ReadLine());
 
-
 if (opcaoDesejada == 1)
 {
     ExecutarNumero questao01 = new ExecutarNumero();
