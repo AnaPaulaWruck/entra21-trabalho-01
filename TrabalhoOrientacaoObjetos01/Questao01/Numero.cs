@@ -100,11 +100,10 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         public string ObterMilharExtenso()
         {
             int milharIsolado = ObterMilharIsolado();
-            string milharExtenso = "";
 
             if (milharIsolado == 1)
             {
-                milharExtenso = "mil";
+                return "mil";
             }
             else if (milharIsolado == 2)
             {
@@ -140,7 +139,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             }
 
             // Se zero:
-            return milharExtenso;
+            return "";
         }
 
         public string ObterCentenaExtenso()
@@ -148,25 +147,23 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             int centenaIsolada = ObterCentenaIsolada();
             int dezenaIsolada = ObterDezenaIsolada();
             int unidadeIsolada = ObterUnidadeIsolada();
-            string centenaExtenso = "";
 
             if (centenaIsolada == 1 && dezenaIsolada == 0 && unidadeIsolada == 0)
             {
-                centenaExtenso= "cem";
+                return "cem";
             }
             else if (centenaIsolada == 1 && dezenaIsolada != 0 && unidadeIsolada != 0)
             {
-                centenaExtenso = "cento";
+                return "cento";
             }
             else if (centenaIsolada == 2)
             {
-                centenaExtenso = "duzentos";
+                return "duzentos";
             }
             else if (centenaIsolada == 3)
             {
-                centenaExtenso = "trezentos";
+                return "trezentos";
             }
-            // continuar alteração
             else if (centenaIsolada == 4)
             {
                 return "quatrocentos";
@@ -198,12 +195,137 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
         public string ObterDezenaExtenso()
         {
-            if (ObterDezenaIsolada() == 1 && ObterUnidadeIsolada() == 0)
+            int dezenaIsolada = ObterDezenaIsolada();
+            int unidadeIsolada = ObterUnidadeIsolada();
+
+            if (dezenaIsolada == 1 && unidadeIsolada == 0)
             {
                 return "dez";
             }
+            else if (dezenaIsolada == 1 && unidadeIsolada != 0)
+            {
+                if (unidadeIsolada == 1)
+                {
+                    return "onze";
+                }
+                else if (unidadeIsolada == 2)
+                {
+                    return "doze";
+                }
+                else if (unidadeIsolada == 3)
+                {
+                    return "treze";
+                }
+                else if (unidadeIsolada == 4)
+                {
+                    return "catorze";
+                }
+                else if (unidadeIsolada == 5)
+                {
+                    return "quinze";
+                }
+                else if (unidadeIsolada == 6)
+                {
+                    return "dezesseis";
+                }
+                else if (unidadeIsolada == 7)
+                {
+                    return "dezessete";
+                }
+                else if (unidadeIsolada == 8)
+                {
+                    return "dezoito";
+                }
+                else if (unidadeIsolada == 9)
+                {
+                    return "dezenove";
+                }
+            }
+            else if (dezenaIsolada == 2)
+            {
+                return "vinte";
+            }
+            else if (dezenaIsolada == 3)
+            {
+                return "trinta";
+            }
+            else if (dezenaIsolada == 4)
+            {
+                return "quarenta";
+            }
+            else if (dezenaIsolada == 5)
+            {
+                return "cinquenta";
+            }
+            else if (dezenaIsolada == 6)
+            {
+                return "sessenta";
+            }
+            else if (dezenaIsolada == 7)
+            {
+                return "setenta";
+            }
+            else if (dezenaIsolada == 8)
+            {
+                return "oitenta";
+            }
+            else if (dezenaIsolada == 9)
+            {
+                return "noventa";
+            }
 
             // Se zero:
+            return "";
+        }
+
+        public string ObterUnidadeExtenso()
+        {
+            int milharIsolado = ObterMilharIsolado();
+            int centenaIsolada = ObterCentenaIsolada();
+            int dezenaIsolada = ObterDezenaIsolada();
+            int unidadeIsolada = ObterUnidadeIsolada();
+
+            if (unidadeIsolada == 1)
+            {
+                return "um";
+            }
+            else if (unidadeIsolada == 2)
+            {
+                return "dois";
+            }
+            else if (unidadeIsolada == 3)
+            {
+                return "três";
+            }
+            else if (unidadeIsolada == 4)
+            {
+                return "quatro";
+            }
+            else if (unidadeIsolada == 5)
+            {
+                return "cinco";
+            }
+            else if (unidadeIsolada == 6)
+            {
+                return "seis";
+            }
+            else if (unidadeIsolada == 7)
+            {
+                return "sete";
+            }
+            else if (unidadeIsolada == 8)
+            {
+                return "oito";
+            }
+            else if (unidadeIsolada == 9)
+            {
+                return "nove";
+            }
+            else if (unidadeIsolada == 0 && dezenaIsolada == 0 && centenaIsolada == 0 && milharIsolado == 0)
+            {
+                return "zero";
+            }
+
             return "";
         }
     }
