@@ -11,7 +11,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
         //AMANDA CAROLINE BAULER MOTA
 
         public DateTime Data;
-        //Transformar a data e string.
+        
         public string ObterMesPorExtenso()
         {
             var mes = Data.Month;
@@ -202,7 +202,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                     }
                 
             }
-            else if (dia < 31)
+            else if (dia < 32)
             {
                 var diaString = Convert.ToString(dia);
                 if (Convert.ToString(diaString[1]) == "0")
@@ -398,7 +398,18 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             {
                 unidade = "";
             }
-
+            if(centena == "")
+            {
+                centena = "e";
+            }
+            if(unidade != "")
+            {
+                dezena = dezena + " e";
+            }
+            if(dezena != "" && centena != "")
+            {
+                centena = centena + " e";
+            }
             return milhar + " " + centena + " " + dezena + " " + unidade;
         }
         public string ObterDataCompletaPorExtenso()
