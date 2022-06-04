@@ -12,41 +12,40 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         public void Executar()
         {
             var numero = new Numero();
-            numero.Valor = 1311.69;
+            numero.Valor = 0007.10;
 
-            //            Console.WriteLine(@"-------MENU-------
-            //1 - Questão 1
-            //2 - Questão 2
-            //3 - Questão 3
-            //9 - Sair");
+            //Console.Clear();
+            //var opcaoDesejada = 0;
 
-            //            Console.Write("\nDigite a opção desejada: ");
-            //            int opcaoDesejada = Convert.ToInt32(Console.ReadLine());
+            //var numero = new Numero();
 
-            //            if (opcaoDesejada == 1)
-            //            {
-            //                ExecutarNumero questao01 = new ExecutarNumero();
-            //                questao01.Executar();
-            //            }
+            //while (opcaoDesejada != 5)
+            //{
 
-            Console.WriteLine("Milhar: " + numero.ObterMilharIsolado());
-            Console.WriteLine("Centena: " + numero.ObterCentenaIsolada());
-            Console.WriteLine("Dezena: " + numero.ObterDezenaIsolada());
-            Console.WriteLine("Unidade: " + numero.ObterUnidadeIsolada());
-            Console.WriteLine("Décimo: " + numero.ObterDecimoIsolado());
-            Console.WriteLine("Centésimo: " + numero.ObterCentesimoIsolado());
+            //    Console.WriteLine(@"-------MENU-------
+            //1 - OBTER MÊS POR EXTENSO
+            //2 - OBTER DIA POR EXTENSO 
+            //3 - OBTER ANO POR EXTENSO
+            //4 - OBTER DATA COMPLETA POR EXTENSO
+            //5 - SAIR");
 
-            //Console.WriteLine("Milhar extenso: " + numero.ObterMilharExtenso());
-            //Console.WriteLine("centena extenso: " + numero.ObterCentenaExtenso());
-            //Console.WriteLine("Unidade extenso: " + numero.ObterUnidadeExtenso());
-            //Console.WriteLine("Décimo extenso: " + numero.ObterDecimoExtenso());
-            //Console.WriteLine("Centésimo extenso: " + numero.ObterCentesimoExtenso());
-            //Console.WriteLine("Décimo extenso: " + numero.ObterDecimoExtenso());
-            //Console.WriteLine("Centésimo extenso: " + numero.ObterCentesimoExtenso());
+            //    Console.WriteLine("Escolha a opção desejada: ");
+            //    opcaoDesejada = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine(numero.ApresentarMilharExtenso());
 
-            //Console.WriteLine("Valor total: " + numero.ObterValorTotalExtenso());
+            //    if (opcaoDesejada == 1)
+            //    {
+            //        Console.WriteLine("Digite uma data no formato: (YYYY/MM/DD) ");
+            //        DateTime dataEscolhida = Convert.ToDateTime(Console.ReadLine());
+
+            //        calendario.Data = dataEscolhida;
+
+            //        Console.WriteLine("O mês é: " + calendario.ObterMesPorExtenso());
+            //    }
+
+                Console.WriteLine("\n" + numero.ApresentarMilharExtenso());
+
+                //Console.WriteLine("Valor total: " + numero.ObterValorTotalExtenso());
+            }
         }
     }
-}
