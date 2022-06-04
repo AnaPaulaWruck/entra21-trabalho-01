@@ -11,7 +11,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
         //AMANDA CAROLINE BAULER MOTA
 
         public DateTime Data;
-        
+
         public string ObterMesPorExtenso()
         {
             var mes = Data.Month;
@@ -119,7 +119,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
                 {
                     return "Dez";
                 }
-                else if(Convert.ToString(diaString[1]) == "1")
+                else if (Convert.ToString(diaString[1]) == "1")
                 {
                     return "Onze";
                 }
@@ -159,48 +159,48 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             else if (dia < 30)
             {
                 var diaString = Convert.ToString(dia);
-                
-                    if (Convert.ToString(diaString[1]) == "0")
-                    {
-                        return "Vinte";
-                    }
-                    else if (Convert.ToString(diaString[1]) == "1")
-                    {
-                        return "Vinte e um";
-                    }
-                    else if (Convert.ToString(diaString[1]) == "2")
-                    {
-                        return "Vinte e dois";
-                    }
-                    else if (Convert.ToString(diaString[1]) == "3")
-                    {
-                        return "Vinte e três";
-                    }
-                    else if (Convert.ToString(diaString[1]) == "4")
-                    {
-                        return "Vinte e quatro";
-                    }
-                    else if (Convert.ToString(diaString[1]) == "5")
-                    {
-                        return "Vinte e cinco";
-                    }
-                    else if (Convert.ToString(diaString[1]) == "6")
-                    {
-                        return "Vinte e seis";
-                    }
-                    else if (Convert.ToString(diaString[1]) == "7")
-                    {
-                        return "Vinte e sete";
-                    }
-                    else if (Convert.ToString(diaString[1]) == "8")
-                    {
-                        return "Vinte e oito";
-                    }
-                    else if (Convert.ToString(diaString[1]) == "9")
-                    {
-                        return "Vinte e nove";
-                    }
-                
+
+                if (Convert.ToString(diaString[1]) == "0")
+                {
+                    return "Vinte";
+                }
+                else if (Convert.ToString(diaString[1]) == "1")
+                {
+                    return "Vinte e um";
+                }
+                else if (Convert.ToString(diaString[1]) == "2")
+                {
+                    return "Vinte e dois";
+                }
+                else if (Convert.ToString(diaString[1]) == "3")
+                {
+                    return "Vinte e três";
+                }
+                else if (Convert.ToString(diaString[1]) == "4")
+                {
+                    return "Vinte e quatro";
+                }
+                else if (Convert.ToString(diaString[1]) == "5")
+                {
+                    return "Vinte e cinco";
+                }
+                else if (Convert.ToString(diaString[1]) == "6")
+                {
+                    return "Vinte e seis";
+                }
+                else if (Convert.ToString(diaString[1]) == "7")
+                {
+                    return "Vinte e sete";
+                }
+                else if (Convert.ToString(diaString[1]) == "8")
+                {
+                    return "Vinte e oito";
+                }
+                else if (Convert.ToString(diaString[1]) == "9")
+                {
+                    return "Vinte e nove";
+                }
+
             }
             else if (dia < 32)
             {
@@ -326,7 +326,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             }
             else if ((dezena == "1") && (unidade == "4"))
             {
-                dezena = "catorze";
+                dezena = "quatorze";
                 unidade = "";
             }
             else if ((dezena == "1") && (unidade == "5"))
@@ -398,19 +398,31 @@ namespace TrabalhoOrientacaoObjetos01.Questao02
             {
                 unidade = "";
             }
-            if(centena == "")
+            if (centena == "" && dezena == "" && unidade == "")
             {
-                centena = "e";
+                return milhar;
             }
-            if(unidade != "")
+            else if (centena == "" && dezena == "" && unidade != "")
             {
-                dezena = dezena + " e";
+                return milhar + " e " + unidade;
             }
-            if(dezena != "" && centena != "")
+            else if (centena == "" && dezena != "" && unidade == "")
             {
-                centena = centena + " e";
+                return milhar + " e " + dezena;
             }
-            return milhar + " " + centena + " " + dezena + " " + unidade;
+            else if (centena == "" && dezena != "" && unidade != "")
+            {
+                return milhar + " e " + dezena + " e " + unidade;
+            }
+            else if (centena != "" && dezena != "" && unidade == "")
+            {
+                return milhar + " " + centena + " e " + dezena;
+            }
+            else
+            {
+                return milhar + " " + centena + " e " + dezena + " e " + unidade;
+            }
+
         }
         public string ObterDataCompletaPorExtenso()
         {
