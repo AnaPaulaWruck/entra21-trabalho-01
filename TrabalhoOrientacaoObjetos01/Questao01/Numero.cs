@@ -195,17 +195,18 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
         }
 
         public string ObterDezenaExtenso()
+
         {
             int dezenaIsolada = ObterDezenaIsolada();
             int unidadeIsolada = ObterUnidadeIsolada();
 
-            if (dezenaIsolada == 1 && unidadeIsolada == 0)
+            if (dezenaIsolada == 1)
             {
-                return "dez";
-            }
-            else if (dezenaIsolada == 1 && unidadeIsolada != 0)
-            {
-                if (unidadeIsolada == 1)
+                if (unidadeIsolada == 0)
+                {
+                    return "dez";
+                }
+                else if (unidadeIsolada == 1)
                 {
                     return "onze";
                 }
@@ -244,35 +245,347 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (dezenaIsolada == 2)
             {
-                return "vinte";
+                if (unidadeIsolada == 0)
+                {
+                    return "vinte";
+                }
+                else if (unidadeIsolada == 1)
+                {
+                    return "vinte e um";
+                }
+                else if (unidadeIsolada == 2)
+                {
+                    return "vinte e dois";
+                }
+                else if (unidadeIsolada == 3)
+                {
+                    return "vinte e três";
+                }
+                else if (unidadeIsolada == 4)
+                {
+                    return "vinte e quatro";
+                }
+                else if (unidadeIsolada == 5)
+                {
+                    return "vinte e cinco";
+                }
+                else if (unidadeIsolada == 6)
+                {
+                    return "vinte e seis";
+                }
+                else if (unidadeIsolada == 7)
+                {
+                    return "vinte e sete";
+                }
+                else if (unidadeIsolada == 8)
+                {
+                    return "vinte e oito";
+                }
+                else if (unidadeIsolada == 9)
+                {
+                    return "vinte e nove";
+                }
             }
             else if (dezenaIsolada == 3)
             {
-                return "trinta";
+                if (unidadeIsolada == 0)
+                {
+                    return "trinta";
+                }
+                else if (unidadeIsolada == 1)
+                {
+                    return "trinta e um";
+                }
+                else if (unidadeIsolada == 2)
+                {
+                    return "trinta e dois";
+                }
+                else if (unidadeIsolada == 3)
+                {
+                    return "trinta e três";
+                }
+                else if (unidadeIsolada == 4)
+                {
+                    return "trinta e quatro";
+                }
+                else if (unidadeIsolada == 5)
+                {
+                    return "trinta e cinco";
+                }
+                else if (unidadeIsolada == 6)
+                {
+                    return "trinta e seis";
+                }
+                else if (unidadeIsolada == 7)
+                {
+                    return "trinta e sete";
+                }
+                else if (unidadeIsolada == 8)
+                {
+                    return "trinta e oito";
+                }
+                else if (unidadeIsolada == 9)
+                {
+                    return "trinta e nove";
+                }
             }
             else if (dezenaIsolada == 4)
             {
-                return "quarenta";
+                if (unidadeIsolada == 0)
+                {
+                    return "quarenta";
+                }
+                else if (unidadeIsolada == 1)
+                {
+                    return "quarenta e um";
+                }
+                else if (unidadeIsolada == 2)
+                {
+                    return "quarenta e dois";
+                }
+                else if (unidadeIsolada == 3)
+                {
+                    return "quarenta e três";
+                }
+                else if (unidadeIsolada == 4)
+                {
+                    return "quarenta e quatro";
+                }
+                else if (unidadeIsolada == 5)
+                {
+                    return "quarenta e cinco";
+                }
+                else if (unidadeIsolada == 6)
+                {
+                    return "quarenta e seis";
+                }
+                else if (unidadeIsolada == 7)
+                {
+                    return "quarenta e sete";
+                }
+                else if (unidadeIsolada == 8)
+                {
+                    return "quarenta e oito";
+                }
+                else if (unidadeIsolada == 9)
+                {
+                    return "quarenta e nove";
+                }
             }
             else if (dezenaIsolada == 5)
             {
-                return "cinquenta";
+                if (unidadeIsolada == 0)
+                {
+                    return "cinquenta";
+                }
+                else if (unidadeIsolada == 1)
+                {
+                    return "cinquenta e um";
+                }
+                else if (unidadeIsolada == 2)
+                {
+                    return "cinquenta e dois";
+                }
+                else if (unidadeIsolada == 3)
+                {
+                    return "cinquenta e três";
+                }
+                else if (unidadeIsolada == 4)
+                {
+                    return "cinquenta e quatro";
+                }
+                else if (unidadeIsolada == 5)
+                {
+                    return "cinquenta e cinco";
+                }
+                else if (unidadeIsolada == 6)
+                {
+                    return "cinquenta e seis";
+                }
+                else if (unidadeIsolada == 7)
+                {
+                    return "cinquenta e sete";
+                }
+                else if (unidadeIsolada == 8)
+                {
+                    return "cinquenta e oito";
+                }
+                else if (unidadeIsolada == 9)
+                {
+                    return "cinquenta e nove";
+                }
             }
             else if (dezenaIsolada == 6)
             {
-                return "sessenta";
+                if (unidadeIsolada == 0)
+                {
+                    return "sessenta";
+                }
+                else if (unidadeIsolada == 1)
+                {
+                    return "sessenta e um";
+                }
+                else if (unidadeIsolada == 2)
+                {
+                    return "sessenta e dois";
+                }
+                else if (unidadeIsolada == 3)
+                {
+                    return "sessenta e três";
+                }
+                else if (unidadeIsolada == 4)
+                {
+                    return "sessenta e quatro";
+                }
+                else if (unidadeIsolada == 5)
+                {
+                    return "sessenta e cinco";
+                }
+                else if (unidadeIsolada == 6)
+                {
+                    return "sessenta e seis";
+                }
+                else if (unidadeIsolada == 7)
+                {
+                    return "sessenta e sete";
+                }
+                else if (unidadeIsolada == 8)
+                {
+                    return "sessenta e oito";
+                }
+                else if (unidadeIsolada == 9)
+                {
+                    return "sessenta e nove";
+                }
             }
             else if (dezenaIsolada == 7)
             {
-                return "setenta";
+                if (unidadeIsolada == 0)
+                {
+                    return "setenta";
+                }
+                else if (unidadeIsolada == 1)
+                {
+                    return "setenta e um";
+                }
+                else if (unidadeIsolada == 2)
+                {
+                    return "setenta e dois";
+                }
+                else if (unidadeIsolada == 3)
+                {
+                    return "setenta e três";
+                }
+                else if (unidadeIsolada == 4)
+                {
+                    return "setenta e quatro";
+                }
+                else if (unidadeIsolada == 5)
+                {
+                    return "setenta e cinco";
+                }
+                else if (unidadeIsolada == 6)
+                {
+                    return "setenta e seis";
+                }
+                else if (unidadeIsolada == 7)
+                {
+                    return "setenta e sete";
+                }
+                else if (unidadeIsolada == 8)
+                {
+                    return "setenta e oito";
+                }
+                else if (unidadeIsolada == 9)
+                {
+                    return "setenta e nove";
+                }
             }
             else if (dezenaIsolada == 8)
             {
-                return "oitenta";
+                if (unidadeIsolada == 0)
+                {
+                    return "oitenta";
+                }
+                else if (unidadeIsolada == 1)
+                {
+                    return "oitenta e um";
+                }
+                else if (unidadeIsolada == 2)
+                {
+                    return "oitenta e dois";
+                }
+                else if (unidadeIsolada == 3)
+                {
+                    return "oitenta e três";
+                }
+                else if (unidadeIsolada == 4)
+                {
+                    return "oitenta e quatro";
+                }
+                else if (unidadeIsolada == 5)
+                {
+                    return "oitenta e cinco";
+                }
+                else if (unidadeIsolada == 6)
+                {
+                    return "oitenta e seis";
+                }
+                else if (unidadeIsolada == 7)
+                {
+                    return "oitenta e sete";
+                }
+                else if (unidadeIsolada == 8)
+                {
+                    return "oitenta e oito";
+                }
+                else if (unidadeIsolada == 9)
+                {
+                    return "oitenta e nove";
+                }
             }
             else if (dezenaIsolada == 9)
             {
-                return "noventa";
+                if (unidadeIsolada == 0)
+                {
+                    return "noventa";
+                }
+                else if (unidadeIsolada == 1)
+                {
+                    return "noventa e um";
+                }
+                else if (unidadeIsolada == 2)
+                {
+                    return "noventa e dois";
+                }
+                else if (unidadeIsolada == 3)
+                {
+                    return "noventa e três";
+                }
+                else if (unidadeIsolada == 4)
+                {
+                    return "noventa e quatro";
+                }
+                else if (unidadeIsolada == 5)
+                {
+                    return "noventa e cinco";
+                }
+                else if (unidadeIsolada == 6)
+                {
+                    return "noventa e seis";
+                }
+                else if (unidadeIsolada == 7)
+                {
+                    return "noventa e sete";
+                }
+                else if (unidadeIsolada == 8)
+                {
+                    return "noventa e oito";
+                }
+                else if (unidadeIsolada == 9)
+                {
+                    return "noventa e nove";
+                }
             }
 
             // Se zero:
@@ -335,13 +648,13 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             int decimoIsolado = ObterDecimoIsolado();
             int centesimoIsolado = ObterCentesimoIsolado();
 
-            if (decimoIsolado == 1 && centesimoIsolado == 0)
+            if (decimoIsolado == 1)
             {
-                return "dez";
-            }
-            else if (decimoIsolado == 1 && centesimoIsolado != 0)
-            {
-                if (centesimoIsolado == 1)
+                if (centesimoIsolado == 0)
+                {
+                    return "dez";
+                }
+                else if (centesimoIsolado == 1)
                 {
                     return "onze";
                 }
@@ -380,37 +693,350 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (decimoIsolado == 2)
             {
-                return "vinte";
+                if (centesimoIsolado == 0)
+                {
+                    return "vinte";
+                }
+                else if (centesimoIsolado == 1)
+                {
+                    return "vinte e um";
+                }
+                else if (centesimoIsolado == 2)
+                {
+                    return "vinte e dois";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "vinte e três";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "vinte e quatro";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "vinte e cinco";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "vinte e seis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "vinte e sete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "vinte e oito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "vinte e nove";
+                }
             }
             else if (decimoIsolado == 3)
             {
-                return "trinta";
+                if (centesimoIsolado == 0)
+                {
+                    return "trinta";
+                }
+                else if (centesimoIsolado == 1)
+                {
+                    return "trinta e um";
+                }
+                else if (centesimoIsolado == 2)
+                {
+                    return "trinta e dois";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "trinta e três";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "trinta e quatro";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "trinta e cinco";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "trinta e seis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "trinta e sete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "trinta e oito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "trinta e nove";
+                }
             }
             else if (decimoIsolado == 4)
             {
-                return "quarenta";
+                if (centesimoIsolado == 0)
+                {
+                    return "quarenta";
+                }
+                else if (centesimoIsolado == 1)
+                {
+                    return "quarenta e um";
+                }
+                else if (centesimoIsolado == 2)
+                {
+                    return "quarenta e dois";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "quarenta e três";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "quarenta e quatro";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "quarenta e cinco";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "quarenta e seis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "quarenta e sete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "quarenta e oito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "quarenta e nove";
+                }
             }
             else if (decimoIsolado == 5)
             {
-                return "cinquenta";
+                if (centesimoIsolado == 0)
+                {
+                    return "cinquenta";
+                }
+                else if (centesimoIsolado == 1)
+                {
+                    return "cinquenta e um";
+                }
+                else if (centesimoIsolado == 2)
+                {
+                    return "cinquenta e dois";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "cinquenta e três";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "cinquenta e quatro";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "cinquenta e cinco";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "cinquenta e seis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "cinquenta e sete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "cinquenta e oito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "cinquenta e nove";
+                }
             }
             else if (decimoIsolado == 6)
             {
-                return "sessenta";
+                if (centesimoIsolado == 0)
+                {
+                    return "sessenta";
+                }
+                else if (centesimoIsolado == 1)
+                {
+                    return "sessenta e um";
+                }
+                else if (centesimoIsolado == 2)
+                {
+                    return "sessenta e dois";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "sessenta e três";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "sessenta e quatro";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "sessenta e cinco";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "sessenta e seis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "sessenta e sete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "sessenta e oito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "sessenta e nove";
+                }
             }
             else if (decimoIsolado == 7)
             {
-                return "setenta";
+                if (centesimoIsolado == 0)
+                {
+                    return "setenta";
+                }
+                else if (centesimoIsolado == 1)
+                {
+                    return "setenta e um";
+                }
+                else if (centesimoIsolado == 2)
+                {
+                    return "setenta e dois";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "setenta e três";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "setenta e quatro";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "setenta e cinco";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "setenta e seis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "setenta e sete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "setenta e oito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "setenta e nove";
+                }
             }
             else if (decimoIsolado == 8)
             {
-                return "oitenta";
+                if (centesimoIsolado == 0)
+                {
+                    return "oitenta";
+                }
+                else if (centesimoIsolado == 1)
+                {
+                    return "oitenta e um";
+                }
+                else if (centesimoIsolado == 2)
+                {
+                    return "oitenta e dois";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "oitenta e três";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "oitenta e quatro";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "oitenta e cinco";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "oitenta e seis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "oitenta e sete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "oitenta e oito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "oitenta e nove";
+                }
             }
             else if (decimoIsolado == 9)
             {
-                return "noventa";
+                if (centesimoIsolado == 0)
+                {
+                    return "noventa";
+                }
+                else if (centesimoIsolado == 1)
+                {
+                    return "noventa e um";
+                }
+                else if (centesimoIsolado == 2)
+                {
+                    return "noventa e dois";
+                }
+                else if (centesimoIsolado == 3)
+                {
+                    return "noventa e três";
+                }
+                else if (centesimoIsolado == 4)
+                {
+                    return "noventa e quatro";
+                }
+                else if (centesimoIsolado == 5)
+                {
+                    return "noventa e cinco";
+                }
+                else if (centesimoIsolado == 6)
+                {
+                    return "noventa e seis";
+                }
+                else if (centesimoIsolado == 7)
+                {
+                    return "noventa e sete";
+                }
+                else if (centesimoIsolado == 8)
+                {
+                    return "noventa e oito";
+                }
+                else if (centesimoIsolado == 9)
+                {
+                    return "noventa e nove";
+                }
             }
 
+            // Se zero:
             return "";
         }
 
@@ -429,31 +1055,31 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             }
             else if (centesimoIsolado == 3)
             {
-                return "dois";
+                return "três";
             }
             else if (centesimoIsolado == 4)
             {
-                return "dois";
+                return "quatro";
             }
             else if (centesimoIsolado == 5)
             {
-                return "dois";
+                return "cinco";
             }
             else if (centesimoIsolado == 6)
             {
-                return "dois";
+                return "seis";
             }
             else if (centesimoIsolado == 7)
             {
-                return "dois";
+                return "sete";
             }
             else if (centesimoIsolado == 8)
             {
-                return "dois";
+                return "oito";
             }
             else if (centesimoIsolado == 9)
             {
-                return "dois";
+                return "nove";
             }
             else if (decimoIsolado == 0 && centesimoIsolado == 0)
             {
@@ -461,6 +1087,41 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             }
 
             return "";
+        }
+
+        public string ApresentarMilharExtenso()
+        {
+            string milharTexto = ObterMilharExtenso();
+            string centenaTexto = ObterCentenaExtenso();
+            string dezenaTexto = ObterDezenaExtenso();
+            string unidadeTexto = ObterUnidadeExtenso();
+            string decimoTexto = ObterDecimoExtenso();
+            string centesimoTexto = ObterCentesimoExtenso();
+
+            string apresentarMilharExtenso = milharTexto;
+
+            if (centenaTexto != "")
+            {
+                apresentarMilharExtenso += " " + centenaTexto;
+            }
+            if (dezenaTexto != "")
+            {
+                apresentarMilharExtenso += " " + dezenaTexto;
+            }
+            if (unidadeTexto != "" && dezenaTexto == "")
+            {
+                apresentarMilharExtenso += " " + unidadeTexto;
+            }
+            if (decimoTexto != "")
+            {
+                apresentarMilharExtenso += " vírgula " + decimoTexto;
+            }
+            if (centesimoTexto != "" && decimoTexto == "")
+            {
+                apresentarMilharExtenso += " vírgula " + centesimoTexto;
+            }
+            
+            return apresentarMilharExtenso;
         }
     }
 }
