@@ -11,89 +11,101 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
     {
         public double Valor;
 
-        public bool VerificarSeValorValido()
-        {
-            if (Valor < 0.00 || Valor > 9999.99)
-            {
-                return false;
-            }
-
-            return true;
-        }
-
         public int ObterMilharIsolado()
         {
-            int milhar = 0;
+            double valor = Valor;
 
-            if (VerificarSeValorValido() == true)
-            {
-                milhar = Convert.ToInt32((Valor - (Valor % 1000)) / 1000);
-            }
+            int milhar = Convert.ToInt32((valor - (valor % 1000)) / 1000);
 
             return milhar;
         }
 
         public int ObterCentenaIsolada()
         {
-            int centena = 0;
+            double valor = Valor;
 
-            if (VerificarSeValorValido() == true)
-            {
-                Valor = Math.Round((Valor % 1000), 2);
-                centena = Convert.ToInt32((Valor - (Valor % 100)) / 100);
-            }
+            int milhar = Convert.ToInt32((valor - (valor % 1000)) / 1000);
+            int centena = Convert.ToInt32((valor - (valor % 100)) / 100);
+            centena = centena - (milhar * 10);
+
+            //double valor = Math.Round((Valor % 1000), 2);
+            //int centena = Convert.ToInt32((valor - (valor % 100)) / 100);
 
             return centena;
         }
 
         public int ObterDezenaIsolada()
         {
-            int dezena = 0;
+            double valor = Valor;
 
-            if (VerificarSeValorValido() == true)
-            {
-                Valor = Math.Round((Valor % 100), 2);
-                dezena = Convert.ToInt32((Valor - (Valor % 10)) / 10);
-            }
+            int milhar = Convert.ToInt32((valor - (valor % 1000)) / 1000);
+            int centena = Convert.ToInt32((valor - (valor % 100)) / 100);
+            centena -= (milhar * 10);
+            int dezena = Convert.ToInt32((valor - (valor % 10)) / 10);
+            dezena = dezena - (centena * 10) - (milhar * 100);
+
+            //double valor = Math.Round((Valor % 100), 2);
+            //int dezena = Convert.ToInt32((valor - (valor % 10)) / 10);
 
             return dezena;
         }
 
         public int ObterUnidadeIsolada()
         {
-            int unidade = 0;
+            double valor = Valor;
 
-            if (VerificarSeValorValido() == true)
-            {
-                Valor = Math.Round((Valor % 10), 2);
-                unidade = Convert.ToInt32((Valor - (Valor % 1)) / 1);
-            }
+            int milhar = Convert.ToInt32((valor - (valor % 1000)) / 1000);
+            int centena = Convert.ToInt32((valor - (valor % 100)) / 100);
+            centena -= (milhar * 10);
+            int dezena = Convert.ToInt32((valor - (valor % 10)) / 10);
+            dezena = dezena - (centena * 10) - (milhar * 100);
+            int unidade = Convert.ToInt32((valor - (valor % 1)) / 1);
+            unidade = unidade - (dezena * 10) - (centena * 100) - (milhar * 1000);
+
+            //double valor = Math.Round((Valor % 10), 2);
+            //int unidade = Convert.ToInt32((valor - (valor % 1)) / 1);
 
             return unidade;
         }
 
         public int ObterDecimoIsolado()
         {
-            int decimo = 0;
+            double valor = Valor;
 
-            if (VerificarSeValorValido() == true)
-            {
-                Valor = Math.Round((Valor % 1), 2);
-                decimo = Convert.ToInt32((Valor - (Valor % 0.1)) / 0.1);
-            }
+            int milhar = Convert.ToInt32((valor - (valor % 1000)) / 1000);
+            int centena = Convert.ToInt32((valor - (valor % 100)) / 100);
+            centena -= (milhar * 10);
+            int dezena = Convert.ToInt32((valor - (valor % 10)) / 10);
+            dezena = dezena - (centena * 10) - (milhar * 100);
+            int unidade = Convert.ToInt32((valor - (valor % 1)) / 1);
+            unidade = unidade - (dezena * 10) - (centena * 100) - (milhar * 1000);
+            int decimo = Convert.ToInt32((valor - (valor % 0.1)) / 0.1);
+            decimo = decimo - (unidade * 10) - (dezena * 100) - (centena * 1000) - (milhar * 10000);
+
+            //double valor = Math.Round((Valor % 1), 2);
+            //int decimo = Convert.ToInt32((valor - (valor % 0.1)) / 0.1);
 
             return decimo;
         }
 
         public int ObterCentesimoIsolado()
         {
-            int centesimo = 0;
+            double valor = Valor;
 
-            if (VerificarSeValorValido() == true)
-            {
-                Valor = Math.Round((Valor % 0.1), 2);
-                centesimo = Convert.ToInt32((Valor - (Valor % 0.01)) / 0.01);
-            }
+            int milhar = Convert.ToInt32((valor - (valor % 1000)) / 1000);
+            int centena = Convert.ToInt32((valor - (valor % 100)) / 100);
+            centena -= (milhar * 10);
+            int dezena = Convert.ToInt32((valor - (valor % 10)) / 10);
+            dezena = dezena - (centena * 10) - (milhar * 100);
+            int unidade = Convert.ToInt32((valor - (valor % 1)) / 1);
+            unidade = unidade - (dezena * 10) - (centena * 100) - (milhar * 1000);
+            int decimo = Convert.ToInt32((valor - (valor % 0.1)) / 0.1);
+            decimo = decimo - (unidade * 10) - (dezena * 100) - (centena * 1000) - (milhar * 10000);
+            int centesimo = Convert.ToInt32((valor - (valor % 0.01)) / 0.01);
+            centesimo = centesimo - (decimo * 10) - (unidade * 100) - (dezena * 1000) - (centena * 10000) - (milhar * 100000);
+
+            //double valor = Math.Round((Valor % 0.1), 2);
+            //int centesimo = Convert.ToInt32((valor - (valor % 0.01)) / 0.01);
 
             return centesimo;
         }
@@ -1120,7 +1132,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             {
                 apresentarMilharExtenso += " vírgula " + centesimoTexto;
             }
-            
+
             return apresentarMilharExtenso;
         }
     }
