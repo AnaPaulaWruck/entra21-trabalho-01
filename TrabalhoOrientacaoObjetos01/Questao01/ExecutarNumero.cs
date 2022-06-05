@@ -11,41 +11,78 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
     {
         public void Executar()
         {
+            Console.Clear();
+
+            var opcaoDesejada = 0;
             var numero = new Numero();
-            numero.Valor = 0007.10;
 
-            //Console.Clear();
-            //var opcaoDesejada = 0;
+            while (opcaoDesejada != 9)
+            {
 
-            //var numero = new Numero();
+                Console.WriteLine(@"
+----------MENU----------
+1 - OBTER MILHAR POR EXTENSO
+2 - OBTER CENTENA POR EXTENSO
+3 - OBTER DEZENA POR EXTENSO
+4 - OBTER UNIDADE POR EXTENSO
+5 - OBTER DECIMAL POR EXTENSO
+9 - SAIR");
 
-            //while (opcaoDesejada != 5)
-            //{
+                Console.Write("\nDigite a opção desejada: ");
+                opcaoDesejada = Convert.ToInt32(Console.ReadLine());
 
-            //    Console.WriteLine(@"-------MENU-------
-            //1 - OBTER MÊS POR EXTENSO
-            //2 - OBTER DIA POR EXTENSO 
-            //3 - OBTER ANO POR EXTENSO
-            //4 - OBTER DATA COMPLETA POR EXTENSO
-            //5 - SAIR");
+                if (opcaoDesejada == 1)
+                {
+                    Console.Write("Digite um número entre 0,00 e 9999,99: ");
+                    double numeroDigitado = Convert.ToDouble(Console.ReadLine());
 
-            //    Console.WriteLine("Escolha a opção desejada: ");
-            //    opcaoDesejada = Convert.ToInt32(Console.ReadLine());
+                    numero.Valor = numeroDigitado;
 
+                    Console.WriteLine("\nMilhar por extenso: " + numero.ApresentarMilharExtenso());
+                }
 
-            //    if (opcaoDesejada == 1)
-            //    {
-            //        Console.WriteLine("Digite uma data no formato: (YYYY/MM/DD) ");
-            //        DateTime dataEscolhida = Convert.ToDateTime(Console.ReadLine());
+                else if (opcaoDesejada == 2)
+                {
+                    Console.Write("Digite um número entre 0,00 e 9999,99: ");
+                    double numeroDigitado = Convert.ToDouble(Console.ReadLine());
 
-            //        calendario.Data = dataEscolhida;
+                    numero.Valor = numeroDigitado;
 
-            //        Console.WriteLine("O mês é: " + calendario.ObterMesPorExtenso());
-            //    }
+                    Console.WriteLine("\nCentena por extenso: " + numero.ApresentarCentenaExtenso());
+                }
 
-                Console.WriteLine("\n" + numero.ApresentarMilharExtenso());
+                else if (opcaoDesejada == 3)
+                {
+                    Console.Write("Digite um número entre 0,00 e 9999,99: ");
+                    double numeroDigitado = Convert.ToDouble(Console.ReadLine());
 
-                //Console.WriteLine("Valor total: " + numero.ObterValorTotalExtenso());
+                    numero.Valor = numeroDigitado;
+
+                    Console.WriteLine("\nDezena por extenso: " + numero.ApresentarDezenaExtenso());
+                }
+
+                else if (opcaoDesejada == 4)
+                {
+                    Console.Write("Digite um número entre 0,00 e 9999,99: ");
+                    double numeroDigitado = Convert.ToDouble(Console.ReadLine());
+
+                    numero.Valor = numeroDigitado;
+
+                    Console.WriteLine("\nUnidade por extenso: " + numero.ApresentarUnidadeExtenso());
+                }
+
+                else if (opcaoDesejada == 5)
+                {
+                    Console.Write("Digite um número entre 0,00 e 9999,99: ");
+                    double numeroDigitado = Convert.ToDouble(Console.ReadLine());
+
+                    numero.Valor = numeroDigitado;
+
+                    Console.WriteLine("\nDecimal por extenso: " + numero.ApresentarDecimalExtenso());
+                }
+
+                //Console.Clear();
             }
         }
     }
+}

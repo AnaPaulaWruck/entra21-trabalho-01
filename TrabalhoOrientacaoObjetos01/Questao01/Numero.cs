@@ -150,7 +150,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             {
                 return "cem";
             }
-            else if (centenaIsolada == 1 && dezenaIsolada != 0 && unidadeIsolada != 0)
+            else if (centenaIsolada == 1 && (dezenaIsolada != 0 || unidadeIsolada != 0))
             {
                 return "cento";
             }
@@ -473,6 +473,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
 
             int dezenaIsolada = ObterDezenaIsolada();
             int decimoIsolado = ObterDecimoIsolado();
+            int centesimoIsolado = ObterCentesimoIsolado();
 
             // Milhar
             string apresentarMilharExtenso = milharTexto;
@@ -502,7 +503,7 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             {
                 apresentarMilharExtenso += " e " + unidadeTexto;
             }
-            else if(unidadeTexto != "" && dezenaTexto == "" && (centenaTexto != "" || milharTexto != ""))
+            else if (unidadeTexto != "" && dezenaTexto == "" && (centenaTexto != "" || milharTexto != ""))
             {
                 apresentarMilharExtenso += " e " + unidadeTexto;
             }
@@ -522,12 +523,199 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             {
                 apresentarMilharExtenso += " e " + centesimoTexto;
             }
-            else if (centesimoTexto != "" && decimoTexto == "")
+            else if (centesimoTexto != "" && centesimoIsolado == 0 && decimoIsolado == 0)
+            {
+                apresentarMilharExtenso += " vírgula " + centesimoTexto;
+            }
+            else if (centesimoTexto != "" && decimoIsolado == 0 && centesimoIsolado != 0)
             {
                 apresentarMilharExtenso += " vírgula zero " + centesimoTexto;
             }
 
             return apresentarMilharExtenso;
+        }
+
+        public string ApresentarCentenaExtenso()
+        {
+            string centenaTexto = ObterCentenaExtenso();
+            string dezenaTexto = ObterDezenaExtenso();
+            string unidadeTexto = ObterUnidadeExtenso();
+            string decimoTexto = ObterDecimoExtenso();
+            string centesimoTexto = ObterCentesimoExtenso();
+
+            int dezenaIsolada = ObterDezenaIsolada();
+            int decimoIsolado = ObterDecimoIsolado();
+            int centesimoIsolado = ObterCentesimoIsolado();
+
+            // Centena
+            string apresentarCentenaExtenso = centenaTexto;
+
+            // Dezena
+            if (dezenaTexto != "" && centenaTexto != "")
+            {
+                apresentarCentenaExtenso += " e " + dezenaTexto;
+            }
+            else if (dezenaTexto != "" && centenaTexto == "")
+            {
+                apresentarCentenaExtenso += dezenaTexto;
+            }
+
+            // Unidade
+            if (unidadeTexto != "" && dezenaTexto != "" && dezenaIsolada != 1)
+            {
+                apresentarCentenaExtenso += " e " + unidadeTexto;
+            }
+            else if (unidadeTexto != "" && dezenaTexto == "" && centenaTexto != "")
+            {
+                apresentarCentenaExtenso += " e " + unidadeTexto;
+            }
+            else if (unidadeTexto != "" && dezenaTexto == "" && centenaTexto == "")
+            {
+                apresentarCentenaExtenso += unidadeTexto;
+            }
+
+            // Décimo
+            if (decimoTexto != "")
+            {
+                apresentarCentenaExtenso += " vírgula " + decimoTexto;
+            }
+
+            // Centésimo
+            if (centesimoTexto != "" && decimoTexto != "" && decimoIsolado != 1)
+            {
+                apresentarCentenaExtenso += " e " + centesimoTexto;
+            }
+            else if (centesimoTexto != "" && centesimoIsolado == 0 && decimoIsolado == 0)
+            {
+                apresentarCentenaExtenso += " vírgula " + centesimoTexto;
+            }
+            else if (centesimoTexto != "" && decimoIsolado == 0 && centesimoIsolado != 0)
+            {
+                apresentarCentenaExtenso += " vírgula zero " + centesimoTexto;
+            }
+
+            return apresentarCentenaExtenso;
+        }
+
+        public string ApresentarDezenaExtenso()
+        {
+            string dezenaTexto = ObterDezenaExtenso();
+            string unidadeTexto = ObterUnidadeExtenso();
+            string decimoTexto = ObterDecimoExtenso();
+            string centesimoTexto = ObterCentesimoExtenso();
+
+            int dezenaIsolada = ObterDezenaIsolada();
+            int decimoIsolado = ObterDecimoIsolado();
+            int centesimoIsolado = ObterCentesimoIsolado();
+
+            // Dezena
+            string apresentarDezenaExtenso = dezenaTexto;
+
+            // Unidade
+            if (unidadeTexto != "" && dezenaTexto != "" && dezenaIsolada != 1)
+            {
+                apresentarDezenaExtenso += " e " + unidadeTexto;
+            }
+            else if (unidadeTexto != "" && dezenaTexto == "")
+            {
+                apresentarDezenaExtenso += unidadeTexto;
+            }
+
+            // Décimo
+            if (decimoTexto != "")
+            {
+                apresentarDezenaExtenso += " vírgula " + decimoTexto;
+            }
+
+            // Centésimo
+            if (centesimoTexto != "" && decimoTexto != "" && decimoIsolado != 1)
+            {
+                apresentarDezenaExtenso += " e " + centesimoTexto;
+            }
+            else if (centesimoTexto != "" && centesimoIsolado == 0 && decimoIsolado == 0)
+            {
+                apresentarDezenaExtenso += " vírgula " + centesimoTexto;
+            }
+            else if (centesimoTexto != "" && decimoIsolado == 0 && centesimoIsolado != 0)
+            {
+                apresentarDezenaExtenso += " vírgula zero " + centesimoTexto;
+            }
+
+            return apresentarDezenaExtenso;
+        }
+
+        public string ApresentarUnidadeExtenso()
+        {
+            string unidadeTexto = ObterUnidadeExtenso();
+            string decimoTexto = ObterDecimoExtenso();
+            string centesimoTexto = ObterCentesimoExtenso();
+
+            int unidadeIsolada = ObterUnidadeIsolada();
+            int decimoIsolado = ObterDecimoIsolado();
+            int centesimoIsolado = ObterCentesimoIsolado();
+
+            // Unidade
+            string apresentarUnidadeExtenso = unidadeTexto;
+            if (unidadeIsolada == 0)
+            {
+                apresentarUnidadeExtenso = "zero";
+            }
+
+            // Décimo
+            if (decimoTexto != "")
+            {
+                apresentarUnidadeExtenso += " vírgula " + decimoTexto;
+            }
+
+            // Centésimo
+            if (centesimoTexto != "" && decimoTexto != "" && decimoIsolado != 1)
+            {
+                apresentarUnidadeExtenso += " e " + centesimoTexto;
+            }
+            else if (centesimoTexto != "" && centesimoIsolado == 0 && decimoIsolado == 0)
+            {
+                apresentarUnidadeExtenso += " vírgula " + centesimoTexto;
+            }
+            else if (centesimoTexto != "" && decimoIsolado == 0 && centesimoIsolado != 0)
+            {
+                apresentarUnidadeExtenso += " vírgula zero " + centesimoTexto;
+            }
+
+            return apresentarUnidadeExtenso;
+        }
+
+        public string ApresentarDecimalExtenso()
+        {
+            string decimoTexto = ObterDecimoExtenso();
+            string centesimoTexto = ObterCentesimoExtenso();
+
+            int unidadeIsolada = ObterUnidadeIsolada();
+            int decimoIsolado = ObterDecimoIsolado();
+            int centesimoIsolado = ObterCentesimoIsolado();
+
+            string apresentarDecimalExtenso = "zero vírgula";
+
+            // Décimo
+            if (decimoTexto != "")
+            {
+                apresentarDecimalExtenso += " " + decimoTexto;
+            }
+
+            // Centésimo
+            if (centesimoTexto != "" && decimoTexto != "" && decimoIsolado != 1)
+            {
+                apresentarDecimalExtenso += " e " + centesimoTexto;
+            }
+            else if (centesimoTexto != "" && centesimoIsolado == 0 && decimoIsolado == 0)
+            {
+                apresentarDecimalExtenso += " " + centesimoTexto;
+            }
+            else if (centesimoTexto != "" && decimoIsolado == 0 && centesimoIsolado != 0)
+            {
+                apresentarDecimalExtenso += " zero " + centesimoTexto;
+            }
+
+            return apresentarDecimalExtenso;
         }
     }
 }
