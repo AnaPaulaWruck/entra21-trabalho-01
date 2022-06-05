@@ -689,7 +689,6 @@ namespace TrabalhoOrientacaoObjetos01.Questao01
             string decimoTexto = ObterDecimoExtenso();
             string centesimoTexto = ObterCentesimoExtenso();
 
-            int unidadeIsolada = ObterUnidadeIsolada();
             int decimoIsolado = ObterDecimoIsolado();
             int centesimoIsolado = ObterCentesimoIsolado();
 
